@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <!-- <link href="mycss.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+        tr{
+            size:20px;
+        }
+        tr:nth-child(odd) {
+            background: rgb(211, 211, 211)  !important;
+        }
+
+        tr:nth-child(even) {
+            background: white;
+        }
+        body{
+            background-image: url(https://i.pinimg.com/originals/83/0d/47/830d471917023a4d28487acf84dbacc1.png);
+        }
+    </style>
+</head>
+<body>
+    <div clas="conainer">
+        <div align="center">
+
+            <br>
+            <br>
+
+            <h1 class="heading">My Todolist</h1>
+            <div class="list-inline">
+                <input id="inp" placeholder=" Add task here " type="text">
+                <button type="button" class="btn-outline-success" id="btn" title="Add"> <i class="fa fa-plus" aria-hidden="true"></i></button> 
+                <button type="button" class="btn-outline-dark" id="sort" title="Sort"> <i class="fas fa-sort-amount-up fa-fw"></i></button> 
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="center" align="center">
+            <table id="result"></table>
+    </div>
+    <br>
+
+    <div align="center">
+        <input onclick="deleteCmp()" id="clear" type="button" class="btn-outline-primary" value="Clear Completed Tasks" >
+    </div>
+
+    <script src="todoupdate.js"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</body>
+</html>
